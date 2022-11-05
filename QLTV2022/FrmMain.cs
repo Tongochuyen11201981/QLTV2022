@@ -46,5 +46,10 @@ namespace QLTV2022
         {
             tsslTime.Text = System.DateTime.Now.ToString();
         }
+
+        private void quảnLýMượnTrảToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
