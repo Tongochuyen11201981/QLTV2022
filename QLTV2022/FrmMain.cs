@@ -67,7 +67,7 @@ namespace QLTV2022
 
         }
 
-        private void quảnLýSáchToolStripMenuItem_Click(object sender, EventArgs e)
+        private void toolStripButton1_Click(object sender, EventArgs e)
         {
 
         }
