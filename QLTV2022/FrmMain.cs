@@ -19,7 +19,7 @@ namespace QLTV2022
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
-
+            tsslNo.Text = "Thư Viện Thành Phố Hà Nội";
         }
 
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
@@ -29,7 +29,7 @@ namespace QLTV2022
 
         private void toolStripButton3_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
 
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
@@ -68,6 +68,21 @@ namespace QLTV2022
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void quảnLýDanhMụcToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void statusStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void statusStrip1_ItemClicked_1(object sender, ToolStripItemClickedEventArgs e)
         {
 
         }

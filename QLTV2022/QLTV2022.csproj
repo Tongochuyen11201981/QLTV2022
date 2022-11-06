@@ -52,10 +52,64 @@
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_Docgia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Docgia.Designer.cs">
+      <DependentUpon>Frm_Docgia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Lapphieumuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Lapphieumuon.Designer.cs">
+      <DependentUpon>Frm_Lapphieumuon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Nhaxuatban .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Nhaxuatban .Designer.cs">
+      <DependentUpon>Frm_Nhaxuatban .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Quanlysach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Quanlysach.Designer.cs">
+      <DependentUpon>Frm_Quanlysach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Tacgia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Tacgia.Designer.cs">
+      <DependentUpon>Frm_Tacgia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Theloai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Theloai.Designer.cs">
+      <DependentUpon>Frm_Theloai.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Docgia.resx">
+      <DependentUpon>Frm_Docgia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Lapphieumuon.resx">
+      <DependentUpon>Frm_Lapphieumuon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Nhaxuatban .resx">
+      <DependentUpon>Frm_Nhaxuatban .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Quanlysach.resx">
+      <DependentUpon>Frm_Quanlysach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Tacgia.resx">
+      <DependentUpon>Frm_Tacgia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Theloai.resx">
+      <DependentUpon>Frm_Theloai.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
