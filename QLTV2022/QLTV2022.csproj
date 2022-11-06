@@ -52,6 +52,12 @@
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_CTphieumuontra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_CTphieumuontra.Designer.cs">
+      <DependentUpon>Frm_CTphieumuontra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Docgia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,10 +94,25 @@
     <Compile Include="Frm_Theloai.Designer.cs">
       <DependentUpon>Frm_Theloai.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_Timdocgia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Timdocgia.Designer.cs">
+      <DependentUpon>Frm_Timdocgia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Timsach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Timsach.Designer.cs">
+      <DependentUpon>Frm_Timsach.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_CTphieumuontra.resx">
+      <DependentUpon>Frm_CTphieumuontra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Docgia.resx">
       <DependentUpon>Frm_Docgia.cs</DependentUpon>
@@ -110,6 +131,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Theloai.resx">
       <DependentUpon>Frm_Theloai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Timdocgia.resx">
+      <DependentUpon>Frm_Timdocgia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Timsach.resx">
+      <DependentUpon>Frm_Timsach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
