@@ -16,7 +16,7 @@ namespace QLTV2022
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmMain());
+            Application.Run(new Frm_Docgia());
         }
     }
 }

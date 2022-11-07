@@ -43,16 +43,18 @@ namespace QLTV2022
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnTim = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.rabtnTensach = new System.Windows.Forms.RadioButton();
-            this.rabtnMasach = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.gbCapnhatthongtinsach.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // gbCapnhatthongtinsach
@@ -68,67 +70,59 @@ namespace QLTV2022
             this.gbCapnhatthongtinsach.Controls.Add(this.lblTensach);
             this.gbCapnhatthongtinsach.Controls.Add(this.lblMasach);
             this.gbCapnhatthongtinsach.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbCapnhatthongtinsach.Location = new System.Drawing.Point(783, 268);
-            this.gbCapnhatthongtinsach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbCapnhatthongtinsach.Location = new System.Drawing.Point(1174, 418);
             this.gbCapnhatthongtinsach.Name = "gbCapnhatthongtinsach";
-            this.gbCapnhatthongtinsach.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.gbCapnhatthongtinsach.Size = new System.Drawing.Size(486, 423);
+            this.gbCapnhatthongtinsach.Size = new System.Drawing.Size(729, 661);
             this.gbCapnhatthongtinsach.TabIndex = 0;
             this.gbCapnhatthongtinsach.TabStop = false;
             this.gbCapnhatthongtinsach.Text = "Cập nhật thông tin sách";
             // 
             // txtTensach
             // 
-            this.txtTensach.Location = new System.Drawing.Point(154, 129);
-            this.txtTensach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTensach.Location = new System.Drawing.Point(231, 201);
             this.txtTensach.Name = "txtTensach";
-            this.txtTensach.Size = new System.Drawing.Size(313, 30);
+            this.txtTensach.Size = new System.Drawing.Size(468, 44);
             this.txtTensach.TabIndex = 9;
             // 
             // comMaTG
             // 
             this.comMaTG.FormattingEnabled = true;
-            this.comMaTG.Location = new System.Drawing.Point(154, 316);
-            this.comMaTG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comMaTG.Location = new System.Drawing.Point(231, 493);
             this.comMaTG.Name = "comMaTG";
-            this.comMaTG.Size = new System.Drawing.Size(313, 30);
+            this.comMaTG.Size = new System.Drawing.Size(468, 45);
             this.comMaTG.TabIndex = 8;
             // 
             // comMaNXB
             // 
             this.comMaNXB.FormattingEnabled = true;
-            this.comMaNXB.Location = new System.Drawing.Point(154, 253);
-            this.comMaNXB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comMaNXB.Location = new System.Drawing.Point(231, 395);
             this.comMaNXB.Name = "comMaNXB";
-            this.comMaNXB.Size = new System.Drawing.Size(313, 30);
+            this.comMaNXB.Size = new System.Drawing.Size(468, 45);
             this.comMaNXB.TabIndex = 7;
             // 
             // comMaTL
             // 
             this.comMaTL.FormattingEnabled = true;
-            this.comMaTL.Location = new System.Drawing.Point(154, 193);
-            this.comMaTL.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comMaTL.Location = new System.Drawing.Point(231, 301);
             this.comMaTL.Name = "comMaTL";
-            this.comMaTL.Size = new System.Drawing.Size(313, 30);
+            this.comMaTL.Size = new System.Drawing.Size(468, 45);
             this.comMaTL.TabIndex = 6;
             // 
             // comMasach
             // 
             this.comMasach.FormattingEnabled = true;
-            this.comMasach.Location = new System.Drawing.Point(154, 72);
-            this.comMasach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comMasach.Location = new System.Drawing.Point(231, 112);
             this.comMasach.Name = "comMasach";
-            this.comMasach.Size = new System.Drawing.Size(313, 30);
+            this.comMasach.Size = new System.Drawing.Size(468, 45);
             this.comMasach.TabIndex = 5;
             // 
             // lblMatg
             // 
             this.lblMatg.AutoSize = true;
             this.lblMatg.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMatg.Location = new System.Drawing.Point(27, 318);
-            this.lblMatg.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMatg.Location = new System.Drawing.Point(40, 497);
             this.lblMatg.Name = "lblMatg";
-            this.lblMatg.Size = new System.Drawing.Size(93, 22);
+            this.lblMatg.Size = new System.Drawing.Size(148, 36);
             this.lblMatg.TabIndex = 4;
             this.lblMatg.Text = "Mã tác giả";
             // 
@@ -136,10 +130,9 @@ namespace QLTV2022
             // 
             this.lblMaNXB.AutoSize = true;
             this.lblMaNXB.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMaNXB.Location = new System.Drawing.Point(27, 255);
-            this.lblMaNXB.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMaNXB.Location = new System.Drawing.Point(40, 399);
             this.lblMaNXB.Name = "lblMaNXB";
-            this.lblMaNXB.Size = new System.Drawing.Size(82, 22);
+            this.lblMaNXB.Size = new System.Drawing.Size(132, 36);
             this.lblMaNXB.TabIndex = 3;
             this.lblMaNXB.Text = "Mã NXB";
             // 
@@ -147,10 +140,9 @@ namespace QLTV2022
             // 
             this.lblMatheloai.AutoSize = true;
             this.lblMatheloai.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMatheloai.Location = new System.Drawing.Point(27, 195);
-            this.lblMatheloai.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMatheloai.Location = new System.Drawing.Point(40, 305);
             this.lblMatheloai.Name = "lblMatheloai";
-            this.lblMatheloai.Size = new System.Drawing.Size(100, 22);
+            this.lblMatheloai.Size = new System.Drawing.Size(159, 36);
             this.lblMatheloai.TabIndex = 2;
             this.lblMatheloai.Text = "Mã thể loại";
             // 
@@ -158,10 +150,9 @@ namespace QLTV2022
             // 
             this.lblTensach.AutoSize = true;
             this.lblTensach.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTensach.Location = new System.Drawing.Point(27, 131);
-            this.lblTensach.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTensach.Location = new System.Drawing.Point(40, 205);
             this.lblTensach.Name = "lblTensach";
-            this.lblTensach.Size = new System.Drawing.Size(80, 22);
+            this.lblTensach.Size = new System.Drawing.Size(125, 36);
             this.lblTensach.TabIndex = 1;
             this.lblTensach.Text = "Tên sách";
             // 
@@ -169,10 +160,9 @@ namespace QLTV2022
             // 
             this.lblMasach.AutoSize = true;
             this.lblMasach.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMasach.Location = new System.Drawing.Point(27, 74);
-            this.lblMasach.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMasach.Location = new System.Drawing.Point(40, 116);
             this.lblMasach.Name = "lblMasach";
-            this.lblMasach.Size = new System.Drawing.Size(76, 22);
+            this.lblMasach.Size = new System.Drawing.Size(119, 36);
             this.lblMasach.TabIndex = 0;
             this.lblMasach.Text = "Mã sách";
             // 
@@ -180,14 +170,12 @@ namespace QLTV2022
             // 
             this.groupBox1.Controls.Add(this.btnTim);
             this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.rabtnTensach);
-            this.groupBox1.Controls.Add(this.rabtnMasach);
+            this.groupBox1.Controls.Add(this.radioButton2);
+            this.groupBox1.Controls.Add(this.radioButton1);
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(783, 33);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Location = new System.Drawing.Point(1175, 51);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(486, 152);
+            this.groupBox1.Size = new System.Drawing.Size(729, 237);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tìm kiếm sách";
@@ -195,57 +183,52 @@ namespace QLTV2022
             // btnTim
             // 
             this.btnTim.Font = new System.Drawing.Font("Times New Roman", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTim.Location = new System.Drawing.Point(371, 104);
-            this.btnTim.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTim.Location = new System.Drawing.Point(557, 162);
             this.btnTim.Name = "btnTim";
-            this.btnTim.Size = new System.Drawing.Size(81, 29);
+            this.btnTim.Size = new System.Drawing.Size(122, 45);
             this.btnTim.TabIndex = 3;
             this.btnTim.Text = "Tìm";
             this.btnTim.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(140, 51);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Location = new System.Drawing.Point(210, 79);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(314, 35);
+            this.textBox1.Size = new System.Drawing.Size(469, 52);
             this.textBox1.TabIndex = 2;
             // 
-            // rabtnTensach
+            // radioButton2
             // 
-            this.rabtnTensach.AutoSize = true;
-            this.rabtnTensach.Font = new System.Drawing.Font("Times New Roman", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rabtnTensach.Location = new System.Drawing.Point(32, 74);
-            this.rabtnTensach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.rabtnTensach.Name = "rabtnTensach";
-            this.rabtnTensach.Size = new System.Drawing.Size(99, 25);
-            this.rabtnTensach.TabIndex = 1;
-            this.rabtnTensach.TabStop = true;
-            this.rabtnTensach.Text = "Tên sách";
-            this.rabtnTensach.UseVisualStyleBackColor = true;
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("Times New Roman", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton2.Location = new System.Drawing.Point(48, 115);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(147, 37);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Tên sách";
+            this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // rabtnMasach
+            // radioButton1
             // 
-            this.rabtnMasach.AutoSize = true;
-            this.rabtnMasach.Font = new System.Drawing.Font("Times New Roman", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rabtnMasach.Location = new System.Drawing.Point(32, 38);
-            this.rabtnMasach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.rabtnMasach.Name = "rabtnMasach";
-            this.rabtnMasach.Size = new System.Drawing.Size(94, 25);
-            this.rabtnMasach.TabIndex = 0;
-            this.rabtnMasach.TabStop = true;
-            this.rabtnMasach.Text = "Mã sách";
-            this.rabtnMasach.UseVisualStyleBackColor = true;
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Times New Roman", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.Location = new System.Drawing.Point(48, 59);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(140, 37);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Mã sách";
+            this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1000, 214);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(1500, 334);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 31);
+            this.label1.Size = new System.Drawing.Size(141, 49);
             this.label1.TabIndex = 2;
             this.label1.Text = "SÁCH";
             // 
@@ -253,10 +236,9 @@ namespace QLTV2022
             // 
             this.btnThem.AutoSize = true;
             this.btnThem.Font = new System.Drawing.Font("Times New Roman", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.Location = new System.Drawing.Point(772, 701);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThem.Location = new System.Drawing.Point(1158, 1096);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(76, 49);
+            this.btnThem.Size = new System.Drawing.Size(114, 77);
             this.btnThem.TabIndex = 3;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
@@ -265,10 +247,9 @@ namespace QLTV2022
             // 
             this.btnXoa.AutoSize = true;
             this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(991, 701);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnXoa.Location = new System.Drawing.Point(1487, 1096);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(76, 49);
+            this.btnXoa.Size = new System.Drawing.Size(114, 77);
             this.btnXoa.TabIndex = 4;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
@@ -277,10 +258,9 @@ namespace QLTV2022
             // 
             this.btnSua.AutoSize = true;
             this.btnSua.Font = new System.Drawing.Font("Times New Roman", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(881, 701);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSua.Location = new System.Drawing.Point(1322, 1096);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(76, 49);
+            this.btnSua.Size = new System.Drawing.Size(114, 77);
             this.btnSua.TabIndex = 5;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
@@ -289,10 +269,9 @@ namespace QLTV2022
             // 
             this.btnLuu.AutoSize = true;
             this.btnLuu.Font = new System.Drawing.Font("Times New Roman", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.Location = new System.Drawing.Point(1099, 701);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLuu.Location = new System.Drawing.Point(1649, 1096);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(76, 49);
+            this.btnLuu.Size = new System.Drawing.Size(114, 77);
             this.btnLuu.TabIndex = 6;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
@@ -301,21 +280,31 @@ namespace QLTV2022
             // 
             this.btnThoat.AutoSize = true;
             this.btnThoat.Font = new System.Drawing.Font("Times New Roman", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(1205, 701);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThoat.Location = new System.Drawing.Point(1808, 1096);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(76, 49);
+            this.btnThoat.Size = new System.Drawing.Size(114, 77);
             this.btnThoat.TabIndex = 7;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(53, 51);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 82;
+            this.dataGridView1.RowTemplate.Height = 33;
+            this.dataGridView1.Size = new System.Drawing.Size(1047, 1027);
+            this.dataGridView1.TabIndex = 8;
+            // 
             // Frm_Quanlysach
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1283, 675);
+            this.ClientSize = new System.Drawing.Size(1981, 1247);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.btnSua);
@@ -324,7 +313,6 @@ namespace QLTV2022
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gbCapnhatthongtinsach);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Frm_Quanlysach";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Frm_Quanlysach";
@@ -332,6 +320,7 @@ namespace QLTV2022
             this.gbCapnhatthongtinsach.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -353,13 +342,14 @@ namespace QLTV2022
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnTim;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.RadioButton rabtnTensach;
-        private System.Windows.Forms.RadioButton rabtnMasach;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

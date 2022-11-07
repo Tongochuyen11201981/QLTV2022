@@ -34,12 +34,10 @@ namespace QLTV2022
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.comGioitinh = new System.Windows.Forms.ComboBox();
             this.comMaDG = new System.Windows.Forms.ComboBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.lblGioitinh = new System.Windows.Forms.Label();
-            this.lblKhoa = new System.Windows.Forms.Label();
-            this.lblLop = new System.Windows.Forms.Label();
+            this.lblSDT = new System.Windows.Forms.Label();
             this.lblNgaysinh = new System.Windows.Forms.Label();
             this.lblHoten = new System.Windows.Forms.Label();
             this.lblMadg = new System.Windows.Forms.Label();
@@ -55,8 +53,15 @@ namespace QLTV2022
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.MADG = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HOTENDG = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GIOITINH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NGAYSINH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SODIENTHOAIDG = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gb1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -74,19 +79,17 @@ namespace QLTV2022
             this.gb1.Controls.Add(this.dateTimePicker1);
             this.gb1.Controls.Add(this.comGioitinh);
             this.gb1.Controls.Add(this.comMaDG);
-            this.gb1.Controls.Add(this.textBox6);
             this.gb1.Controls.Add(this.textBox5);
             this.gb1.Controls.Add(this.textBox2);
             this.gb1.Controls.Add(this.lblGioitinh);
-            this.gb1.Controls.Add(this.lblKhoa);
-            this.gb1.Controls.Add(this.lblLop);
+            this.gb1.Controls.Add(this.lblSDT);
             this.gb1.Controls.Add(this.lblNgaysinh);
             this.gb1.Controls.Add(this.lblHoten);
             this.gb1.Controls.Add(this.lblMadg);
             this.gb1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gb1.Location = new System.Drawing.Point(1224, 453);
             this.gb1.Name = "gb1";
-            this.gb1.Size = new System.Drawing.Size(781, 635);
+            this.gb1.Size = new System.Drawing.Size(781, 557);
             this.gb1.TabIndex = 1;
             this.gb1.TabStop = false;
             this.gb1.Text = "Cập nhật thông tin";
@@ -118,13 +121,6 @@ namespace QLTV2022
             this.comMaDG.Size = new System.Drawing.Size(418, 45);
             this.comMaDG.TabIndex = 12;
             // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(256, 517);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(418, 44);
-            this.textBox6.TabIndex = 11;
-            // 
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(256, 416);
@@ -149,25 +145,15 @@ namespace QLTV2022
             this.lblGioitinh.TabIndex = 5;
             this.lblGioitinh.Text = "Giới tính";
             // 
-            // lblKhoa
+            // lblSDT
             // 
-            this.lblKhoa.AutoSize = true;
-            this.lblKhoa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKhoa.Location = new System.Drawing.Point(54, 521);
-            this.lblKhoa.Name = "lblKhoa";
-            this.lblKhoa.Size = new System.Drawing.Size(82, 36);
-            this.lblKhoa.TabIndex = 4;
-            this.lblKhoa.Text = "Khóa";
-            // 
-            // lblLop
-            // 
-            this.lblLop.AutoSize = true;
-            this.lblLop.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLop.Location = new System.Drawing.Point(54, 424);
-            this.lblLop.Name = "lblLop";
-            this.lblLop.Size = new System.Drawing.Size(67, 36);
-            this.lblLop.TabIndex = 3;
-            this.lblLop.Text = "Lớp";
+            this.lblSDT.AutoSize = true;
+            this.lblSDT.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSDT.Location = new System.Drawing.Point(54, 424);
+            this.lblSDT.Name = "lblSDT";
+            this.lblSDT.Size = new System.Drawing.Size(182, 36);
+            this.lblSDT.TabIndex = 3;
+            this.lblSDT.Text = "Số điện thoại";
             // 
             // lblNgaysinh
             // 
@@ -275,7 +261,7 @@ namespace QLTV2022
             // btnThem
             // 
             this.btnThem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.Location = new System.Drawing.Point(1212, 1132);
+            this.btnThem.Location = new System.Drawing.Point(1210, 1048);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(126, 82);
             this.btnThem.TabIndex = 3;
@@ -285,7 +271,7 @@ namespace QLTV2022
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(1378, 1132);
+            this.btnSua.Location = new System.Drawing.Point(1376, 1048);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(127, 82);
             this.btnSua.TabIndex = 4;
@@ -295,7 +281,7 @@ namespace QLTV2022
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(1550, 1132);
+            this.btnXoa.Location = new System.Drawing.Point(1548, 1048);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(124, 82);
             this.btnXoa.TabIndex = 5;
@@ -305,7 +291,7 @@ namespace QLTV2022
             // btnLuu
             // 
             this.btnLuu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.Location = new System.Drawing.Point(1722, 1132);
+            this.btnLuu.Location = new System.Drawing.Point(1720, 1048);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(126, 82);
             this.btnLuu.TabIndex = 6;
@@ -315,19 +301,76 @@ namespace QLTV2022
             // btnThoat
             // 
             this.btnThoat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(1901, 1132);
+            this.btnThoat.Location = new System.Drawing.Point(1899, 1048);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(126, 82);
             this.btnThoat.TabIndex = 7;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MADG,
+            this.HOTENDG,
+            this.GIOITINH,
+            this.NGAYSINH,
+            this.SODIENTHOAIDG});
+            this.dataGridView1.Location = new System.Drawing.Point(54, 53);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 82;
+            this.dataGridView1.RowTemplate.Height = 33;
+            this.dataGridView1.Size = new System.Drawing.Size(1116, 957);
+            this.dataGridView1.TabIndex = 8;
+            // 
+            // MADG
+            // 
+            this.MADG.DataPropertyName = "MADG";
+            this.MADG.HeaderText = "Mã độc giả";
+            this.MADG.MinimumWidth = 10;
+            this.MADG.Name = "MADG";
+            this.MADG.Width = 200;
+            // 
+            // HOTENDG
+            // 
+            this.HOTENDG.DataPropertyName = "HOTENDG";
+            this.HOTENDG.HeaderText = "Họ và tên";
+            this.HOTENDG.MinimumWidth = 10;
+            this.HOTENDG.Name = "HOTENDG";
+            this.HOTENDG.Width = 200;
+            // 
+            // GIOITINH
+            // 
+            this.GIOITINH.DataPropertyName = "GIOITINH";
+            this.GIOITINH.HeaderText = "Giới tính";
+            this.GIOITINH.MinimumWidth = 10;
+            this.GIOITINH.Name = "GIOITINH";
+            this.GIOITINH.Width = 200;
+            // 
+            // NGAYSINH
+            // 
+            this.NGAYSINH.DataPropertyName = "NGAYSINH ";
+            this.NGAYSINH.HeaderText = "Ngày sinh";
+            this.NGAYSINH.MinimumWidth = 10;
+            this.NGAYSINH.Name = "NGAYSINH";
+            this.NGAYSINH.Width = 200;
+            // 
+            // SODIENTHOAIDG
+            // 
+            this.SODIENTHOAIDG.DataPropertyName = "SODIENTHOAIDG";
+            this.SODIENTHOAIDG.HeaderText = "Số điện thoại";
+            this.SODIENTHOAIDG.MinimumWidth = 10;
+            this.SODIENTHOAIDG.Name = "SODIENTHOAIDG";
+            this.SODIENTHOAIDG.Width = 200;
+            // 
             // Frm_Docgia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(2125, 1239);
+            this.ClientSize = new System.Drawing.Size(2125, 1178);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.btnXoa);
@@ -343,6 +386,7 @@ namespace QLTV2022
             this.gb1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -354,13 +398,9 @@ namespace QLTV2022
         private System.Windows.Forms.GroupBox gb1;
         private System.Windows.Forms.Label lblMadg;
         private System.Windows.Forms.Label lblGioitinh;
-        private System.Windows.Forms.Label lblKhoa;
-        private System.Windows.Forms.Label lblLop;
         private System.Windows.Forms.Label lblNgaysinh;
         private System.Windows.Forms.Label lblHoten;
         private System.Windows.Forms.ComboBox comMaDG;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.ComboBox comGioitinh;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -376,5 +416,13 @@ namespace QLTV2022
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label lblSDT;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MADG;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HOTENDG;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GIOITINH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NGAYSINH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SODIENTHOAIDG;
     }
 }
