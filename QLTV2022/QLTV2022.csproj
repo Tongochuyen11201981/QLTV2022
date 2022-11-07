@@ -94,6 +94,12 @@
     <Compile Include="Frm_Theloai.Designer.cs">
       <DependentUpon>Frm_Theloai.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_thongkesach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_thongkesach.Designer.cs">
+      <DependentUpon>Frm_thongkesach.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QLTVDataSet.Designer.cs">
@@ -124,6 +130,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Theloai.resx">
       <DependentUpon>Frm_Theloai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_thongkesach.resx">
+      <DependentUpon>Frm_thongkesach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
