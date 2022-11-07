@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace QLTV2022
 {
-    public partial class Frm_thongkedocgia : Form
+    public partial class Frm_CTphieumuontra : Form
     {
-        public Frm_thongkedocgia()
+        public Frm_CTphieumuontra()
         {
             InitializeComponent();
+        }
+
+        private void lblMasach_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTrasach_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
