@@ -32,6 +32,7 @@ namespace QLTV2022
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.gb1 = new System.Windows.Forms.GroupBox();
+            this.txtMaDG = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.comGioitinh = new System.Windows.Forms.ComboBox();
             this.txtSDT = new System.Windows.Forms.TextBox();
@@ -60,7 +61,6 @@ namespace QLTV2022
             this.btnTruoc = new System.Windows.Forms.Button();
             this.btnSau = new System.Windows.Forms.Button();
             this.btnCuoi = new System.Windows.Forms.Button();
-            this.txtMaDG = new System.Windows.Forms.TextBox();
             this.gb1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grDMDG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLTVDataSet)).BeginInit();
@@ -98,6 +98,13 @@ namespace QLTV2022
             this.gb1.TabStop = false;
             this.gb1.Text = "Cập nhật thông tin";
             this.gb1.Enter += new System.EventHandler(this.gb1_Enter);
+            // 
+            // txtMaDG
+            // 
+            this.txtMaDG.Location = new System.Drawing.Point(256, 88);
+            this.txtMaDG.Name = "txtMaDG";
+            this.txtMaDG.Size = new System.Drawing.Size(418, 44);
+            this.txtMaDG.TabIndex = 15;
             // 
             // dateTimePicker1
             // 
@@ -256,6 +263,7 @@ namespace QLTV2022
             this.grDMDG.Size = new System.Drawing.Size(1145, 635);
             this.grDMDG.TabIndex = 8;
             this.grDMDG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grDMDG_CellClick);
+            this.grDMDG.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grDMDG_CellContentClick);
             // 
             // MADG
             // 
@@ -359,13 +367,6 @@ namespace QLTV2022
             this.btnCuoi.Text = "Cuối";
             this.btnCuoi.UseVisualStyleBackColor = true;
             this.btnCuoi.Click += new System.EventHandler(this.btnCuoi_Click);
-            // 
-            // txtMaDG
-            // 
-            this.txtMaDG.Location = new System.Drawing.Point(256, 88);
-            this.txtMaDG.Name = "txtMaDG";
-            this.txtMaDG.Size = new System.Drawing.Size(418, 44);
-            this.txtMaDG.TabIndex = 15;
             // 
             // Frm_Docgia
             // 

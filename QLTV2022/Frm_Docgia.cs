@@ -177,6 +177,11 @@ namespace QLTV2022
             this.Close();
         }
 
+        private void grDMDG_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
         private void label2_Click(object sender, EventArgs e)
         {
 
