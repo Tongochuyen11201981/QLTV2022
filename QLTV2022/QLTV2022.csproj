@@ -94,6 +94,12 @@
     <Compile Include="Frm_Theloai.Designer.cs">
       <DependentUpon>Frm_Theloai.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_thongkedocgia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_thongkedocgia.Designer.cs">
+      <DependentUpon>Frm_thongkedocgia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_thongkesach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Theloai.resx">
       <DependentUpon>Frm_Theloai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_thongkedocgia.resx">
+      <DependentUpon>Frm_thongkedocgia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_thongkesach.resx">
       <DependentUpon>Frm_thongkesach.cs</DependentUpon>
